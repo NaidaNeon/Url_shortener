@@ -1,0 +1,35 @@
+<!-- {% load static %}
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<h1>Welcome from the html file, thank you</h1>
+
+<h3>Hey how are you doing there?</h3>  -->
+
+<!-- <h1>SCHOOL INFO</h1>
+
+<h1>{{ school.name }}</h1>
+<h1>{{ school.amount_of_teachers }}</h1>
+<h1>{{ school.amount_of_students }}</h1>
+<h1>{{ school.is_private }}</h1>
+
+
+<form action="" method="POST" >
+    {% csrf_token %}
+    <input type="text" name="school" />
+    <input type="submit" />
+</form> -->
+
+<h2>URL Shortener </h2>
+
+<form action="" method="POST" >
+    {% csrf_token %}
+    <label>Input link</label><br><br>
+    <input type="text" name="link" /><br><br>
+    <input type="submit"/>
+
+</form>
+
+{% if unique_id %}
+<h1>http://127.0.0.1:8000/{{ unique_id }}</h1>
+{% endif %}
